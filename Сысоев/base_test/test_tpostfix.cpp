@@ -49,7 +49,7 @@ TEST(TPostfix, can_create_postfix_from_infix)
 
 TEST(TPostfix, can_calculate_expression)
 {
-	TPostfix p("(3+4)*(9-4)");
+	TPostfix p("(5+4)*(10-1)");
 	p.ToPostfix();
-	EXPECT_EQ(54, p.Calculate());
+	EXPECT_EQ(81, p.Calculate());
 }
